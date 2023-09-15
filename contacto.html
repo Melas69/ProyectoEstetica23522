@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -8,10 +8,23 @@
   </head>
 <body>
     <header>
-        <h1>Contacto - Belleza para ti</h1>
+        <h1>Contacto - Belleza para TI</h1>
     </header>
-
+    
+    
     <main>
+
+    <nav>
+        <ul class="tabs">
+            <a href="index.html"><li onclick="mostrarTab('inicio')">Inicio</li></a>
+            <!-- <li onclick="mostrarTab('servicios')">Servicios</li> -->
+            <a href="productosyservcios.html"><li onclick="mostrarTab('producto')">Producto y Servicios</li></a>
+            <li onclick="mostrarTab('contacto')">Contacto</li>
+            
+        </ul>
+    </nav>
+
+    
         <h2>Formulario de Contacto</h2>
         <form action="#" method="post">
             <div class="form-group">
@@ -57,11 +70,12 @@
                 <input type="submit" value="Enviar">
             </div>
         </form>
+    </main>
 
         <footer>
             <p>Derechos de autor &copy; 2023 Belleza para ti</p>
         </footer>
-    </main>
+    
 </body>
 </html>
 
