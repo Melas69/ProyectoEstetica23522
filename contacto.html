@@ -1,0 +1,67 @@
+!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Belleza para ti</title>
+    <link rel="stylesheet" href="contacto.css"> <!-- Enlazar el archivo CSS -->
+  </head>
+<body>
+    <header>
+        <h1>Contacto - Belleza para ti</h1>
+    </header>
+
+    <main>
+        <h2>Formulario de Contacto</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="whatsapp">Número de WhatsApp:</label>
+                <input type="tel" id="whatsapp" name="whatsapp" required>
+            </div>
+
+            <div class="checkbox-group">
+                <fieldset>
+                    <legend>Servicios:</legend>
+                    <input type="checkbox" id="manicuria" name="servicios[]" value="Manicuria">
+                    <label for="manicuria">Manicuria</label>
+
+                    <input type="checkbox" id="podologia" name="servicios[]" value="Podologia">
+                    <label for="podologia">Podología</label>
+
+                    <input type="checkbox" id="masajes" name="servicios[]" value="Masajes">
+                    <label for="masajes">Masajes</label>
+                </fieldset>
+            </div>
+
+            <div class="form-group">
+                <label for="observaciones">Observaciones:</label>
+                <textarea id="observaciones" name="observaciones" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+
+        <footer>
+            <p>Derechos de autor &copy; 2023 Belleza para ti</p>
+        </footer>
+    </main>
+</body>
+</html>
+
