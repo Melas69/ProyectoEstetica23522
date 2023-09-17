@@ -1,0 +1,59 @@
+/* Esto es un comentario */
+/* *{} Selector universal - Aplica a todos los elementos de la página */
+*{
+    margin: 5px;
+    padding: 5px;
+    background-color: pink;
+}
+
+/* -----------------------------INDEX.HTML------------------------------------- */
+/* Selector de etiqueta */
+body {
+    background-color: #FFC0CB;
+    /* Código de color para rosa claro */
+    font-family: Arial, sans-serif;
+    /* Fuente predeterminada */
+    margin: 0;
+    /* Eliminar márgenes predeterminados */
+    padding: 0;
+    /* Eliminar relleno predeterminado */
+}
+h2{
+    margin-left: 0px;
+    color: black;
+    background-color: fuchsia;
+    /* border: solid black; */
+}
+nav{
+    text-align: center;
+    background-color: fuchsia;
+}
+a{
+    
+    text-align: center;
+    background-color: fuchsia;
+    
+}
+img{
+    width: auto;
+    height: auto; 
+ }
+
+/* Selector de Clase - Se puede reutilizar en varios elementos */
+.subtitulo{
+    margin-left: 5px;
+    color: black;
+    /* background-color: fuchsia; */
+}
+
+/* Selector de ID - No se puede reutilizar */
+/* Voy utilizar un ID cuando quiero aplicar una propiedad solamente a un unico elemento */
+/* HTML TE DEJA PERO NO ES UNA BUENA PRACTICA */
+/* 
+#texto{
+
+}
+*/
+
+/* -----------------------------CONTACTO.HTML------------------------------------- */
+/* -----------------------------PRODUCTOSYSERVICIOS.HTML-------------------------- */
