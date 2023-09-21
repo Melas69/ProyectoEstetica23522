@@ -3,14 +3,12 @@
 *{
     margin: 5px;
     padding: 5px;
-    background-color: pink;
 }
 
 /* -----------------------------INDEX.HTML------------------------------------- */
 /* Selector de etiqueta */
 body {
-    background-color: #FFC0CB;
-    /* Código de color para rosa claro */
+    background-color: white;
     font-family: Arial, sans-serif;
     /* Fuente predeterminada */
     margin: 0;
@@ -21,17 +19,18 @@ body {
 h2{
     margin-left: 0px;
     color: black;
-    background-color: fuchsia;
+    background-color: ;
     /* border: solid black; */
 }
 nav{
     text-align: center;
-    background-color: fuchsia;
+    background-color: deeppink;
 }
 a{
-    
+    font-family: Arial, Helvetica, sans-serif; /*cambie la fuente pero en general es Arial, que es de las menos riesgosas*/
+    color : white;
     text-align: center;
-    background-color: fuchsia;
+    background-color: deeppink;
     
 }
 img{
@@ -40,10 +39,16 @@ img{
  }
 
 /* Selector de Clase - Se puede reutilizar en varios elementos */
+
+.bienvenida{
+    text-align: center; /*texto de bienvenida del index centrado*/
+    padding-left: 15%;
+    padding-right: 15%;
+}
 .subtitulo{
     margin-left: 5px;
     color: black;
-    /* background-color: fuchsia; */
+    font-weight: bold; /*negrita en los subtitulos*/
 }
 
 /* Selector de ID - No se puede reutilizar */
