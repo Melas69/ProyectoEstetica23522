@@ -1,105 +1,132 @@
 /* Esto es un comentario */
 /* *{} Selector universal - Aplica a todos los elementos de la página */
-*{
+* {
     margin: 5px;
     padding: 5px;
-    display: grid;
+    /*display: grid;*/
 }
 
-#header{
+/*#header{
     height: 70px;
     background-color: pink;
-    /*agregar imagen de banner*/
 }
+    /*agregar imagen de banner*/
+
 /* -----------------------------INDEX.HTML------------------------------------- */
 /* Selector de etiqueta */
-body{
+body {
     /* Fuente predeterminada */
     margin: 0;
     /* Eliminar márgenes predeterminados */
     padding: 0;
     /* Eliminar relleno predeterminado */
 }
-h2{
+
+#logo {
+    width: 50%;
+    height: 50px;
+}
+
+#banner {
+    width: 70%;
+    height: 50px;
+}
+
+h2 {
     margin-left: 0px;
     color: black;
     /* border: solid black; */
 }
 
-#nav{
-    width: 150px;
-    height: 160px;
+#nav {
     background-color: deeppink;
-}
-a{
-    font-family: Arial, Helvetica, sans-serif; /*cambie la fuente pero en general es Arial, que es de las menos riesgosas*/
-    color : white;
-    text-align: center;
-    background-color: deeppink;
-    width: 140px;
-    
+    width: 200px;
+
 }
 
-img{
-    width: auto;
-    height: auto; 
+a {
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+    /*cambie la fuente pero en general es Arial, que es de las menos riesgosas*/
+    color: white;
+    background-color: deeppink;
+
 }
+
+.img_index {
+    width: 500px;
+    height: 500px
+}
+
 
 /* Selector de Clase - Se puede reutilizar en varios elementos */
 
-.bienvenida1{
-    text-align: center; /*texto de bienvenida del index centrado*/
+.bienvenida1 {
+    text-align: center;
+    /*texto de bienvenida del index centrado*/
     margin-left: 180px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.bienvenida2{
-    text-align: center; /*texto de bienvenida del index centrado*/
+.bienvenida2 {
+    text-align: center;
+    /*texto de bienvenida del index centrado*/
     padding-left: 15%;
     padding-right: 15%;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.subtitulo{
+.subtitulo {
     margin-left: 5px;
     color: black;
-    font-weight: bold; /*negrita en los subtitulos*/
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    /*negrita en los subtitulos*/
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.manicuria{
+.manicuria {
     background-color: papayawhip;
     text-align: left;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     width: 100%;
 }
 
-.podologia{
+.podologia {
     background-color: papayawhip;
     text-align: right;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.masajes{
+.masajes {
     background-color: papayawhip;
     text-align: left;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-#footer{
+#footer {
     background-color: pink;
     height: 100px;
 }
 
-.copyright{
-color:white;
-font-size: small;
+.copyright {
+    color: white;
+    font-size: small;
 }
 
-.index1{
+#formulario {
+    background-color: papayawhip;
+
+}
+
+.mapa{
+    background-color: papayawhip;
+
+}
+
+/*como acomodar con grid.index1{
     grid-area: primer_fila
 
-}
+}*/
 
 /* Selector de ID - No se puede reutilizar */
 /* Voy utilizar un ID cuando quiero aplicar una propiedad solamente a un unico elemento */
