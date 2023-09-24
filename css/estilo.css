@@ -3,13 +3,17 @@
 *{
     margin: 5px;
     padding: 5px;
+    display: grid;
 }
 
+#header{
+    height: 70px;
+    background-color: pink;
+    /*agregar imagen de banner*/
+}
 /* -----------------------------INDEX.HTML------------------------------------- */
 /* Selector de etiqueta */
-body {
-    background-color: white;
-    font-family: Arial, sans-serif;
+body{
     /* Fuente predeterminada */
     margin: 0;
     /* Eliminar márgenes predeterminados */
@@ -19,11 +23,12 @@ body {
 h2{
     margin-left: 0px;
     color: black;
-    background-color: ;
     /* border: solid black; */
 }
-nav{
-    text-align: center;
+
+#nav{
+    width: 150px;
+    height: 160px;
     background-color: deeppink;
 }
 a{
@@ -31,24 +36,69 @@ a{
     color : white;
     text-align: center;
     background-color: deeppink;
+    width: 140px;
     
 }
+
 img{
     width: auto;
     height: auto; 
- }
+}
 
 /* Selector de Clase - Se puede reutilizar en varios elementos */
 
-.bienvenida{
+.bienvenida1{
+    text-align: center; /*texto de bienvenida del index centrado*/
+    margin-left: 180px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bienvenida2{
     text-align: center; /*texto de bienvenida del index centrado*/
     padding-left: 15%;
     padding-right: 15%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .subtitulo{
     margin-left: 5px;
     color: black;
     font-weight: bold; /*negrita en los subtitulos*/
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.manicuria{
+    background-color: papayawhip;
+    text-align: left;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    width: 100%;
+}
+
+.podologia{
+    background-color: papayawhip;
+    text-align: right;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.masajes{
+    background-color: papayawhip;
+    text-align: left;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#footer{
+    background-color: pink;
+    height: 100px;
+}
+
+.copyright{
+color:white;
+font-size: small;
+}
+
+.index1{
+    grid-area: primer_fila
+
 }
 
 /* Selector de ID - No se puede reutilizar */
