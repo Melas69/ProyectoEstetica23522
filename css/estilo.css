@@ -25,11 +25,13 @@ body {
 #logo {
     width: 50%;
     height: 50px;
+    float: left;
 }
 
 #banner {
     width: 70%;
     height: 50px;
+    float: right;
 }
 
 h2 {
