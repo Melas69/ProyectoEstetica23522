@@ -31,19 +31,29 @@ body {
 }
 
 #logo {
+<<<<<<< HEAD
     width: 80%;
     height: 80px;
     float: left;
     text-align: left;
     position: relative;
+=======
+    width: 50%;
+    height: 50px;
+    float: left;
+>>>>>>> 8bcfe36259366f9c98118ade270b35f417e766c1
 }
 
 #banner {
     width: 1000px;
     height: 50px;
+<<<<<<< HEAD
     float:right;
     text-align: right;
     position: relative;
+=======
+    float: right;
+>>>>>>> 8bcfe36259366f9c98118ade270b35f417e766c1
 }
 
 
