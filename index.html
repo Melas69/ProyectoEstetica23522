@@ -9,7 +9,8 @@
 
     <!-- CSS externo, lo tengo que linkear, href decirle donde tengo guardada -->
     <link rel="stylesheet" href="./css/estilo.css">
-
+    <!-- KitCode que me genere el Fontawesome -->
+    <script src="https://kit.fontawesome.com/b1ec3dced8.js" crossorigin="anonymous"></script>
     <!-- favicon -->
     <!-- <link rel="icon" href="./img/favicon.ico"> -->
     <link rel="icon" href="imagenes y videos/logo_belleza_para_ti_original.jpeg">
@@ -17,176 +18,152 @@
 
 <body>
 
-    <!-- HEADER Se coloca en el body y es la cabecera visual de la página o de una sección (logotipo, título, etc.). No confundir con <head>, que es el encabezado del documento HTML. // header y adentro del header tenemos el nav que es el menu  -->
-    <div id="header">
-    <header>
-        <!-- Imagen -->
-        <!-- 2 atributos 1.src/source= ruta donde tengo guardada 2. alt= la descripción-->
-        <!--  img, arrastro img y con el shift presionado suelto -->
-        <!-- ./img es el raiz de esa carpeta -->
-        <!-- width/ancho si trabajo con % ajusta anchos siempre al tamaño de la pag-->
-        <!-- <img src="./img/cara.jpg" alt="cara" width="50%"> -->
+    <div class="contenedor">
 
-            <span>
-                <div id="logo"><img src="imagenes y videos/logo_belleza_para_ti.jpeg" alt="logo" width="30%"></div>
-            </span>
+        <!-- HEADER Se coloca en el body y es la cabecera visual de la página o de una sección (logotipo, título, etc.). No confundir con <head>, que es el encabezado del documento HTML. // header y adentro del header tenemos el nav que es el menu  -->
+        <header class="encabezado">
+            <!-- Imagen -->
+            <!-- 2 atributos 1.src/source= ruta donde tengo guardada 2. alt= la descripción-->
+            <!--  img, arrastro img y con el shift presionado suelto -->
+            <!-- ./img es el raiz de esa carpeta -->
+            <!-- width/ancho si trabajo con % ajusta anchos siempre al tamaño de la pag-->
 
-            <span>
-                <div id="banner"><img src="imagenes y videos/banner_belleza_para_ti.jpeg" alt="banner" width="70%">
-            </span>
+            <!-- <img src="imagenes y videos/logo_belleza_para_ti.jpeg" alt="logo" width="25px" height="25px"> -->
+            <!-- <img src="imagenes y videos/banner_belleza_para_ti.jpeg" alt="banner"=> -->
 
+            <!-- <nav> -->
+                <img src="imagenes y videos/logo_belleza_para_ti.jpeg" alt="logo">
+                <ul>
+                    <li><a href="index.html">Inicio </a></li>
+                    <li><a href="productosyservicios.html">Productos y Servicios </a></li>
+                    <li><a href="contacto.html">Contacto </a></li>
+                    <li><a href="pagina4.html">Promos </a></li>
+                </ul>
+            <!-- </nav> -->
 
+            </header>
 
-        <!--<div class="nav">-->
-        <!-- target = "_blank" que te abra en un nueva pestaña -->
-        <section>
-        <div class="nav">
-        <a href="index.html">Inicio </a>
-        <br><br>
-        <!-- # indica que es un ID -->
-        <!-- <a href="#Historia">Historia |</a> -->
-        <a href="productosyservicios.html">Productos y Servicios </a>
-        <br><br>
-        <a href="contacto.html">Contacto </a>
-        <br><br>
-        <a href="pagina4.html">pagina4 </a>
-        </div>
-        </section>
-    </header>
-    </div>
+        <!-- main y adentro dividido con section -->
+        <main class="contenido">
 
-    <!-- main y adentro dividido con section -->
-    <main>
+            <section>
+                <div>
+                    <p class="bienvenida1"> <!--agregue la clase del parrafo de bienvenida para centrarlo-->
 
+                        Si buscas un refugio de relajación y rejuvenecimiento, no busques más allá de Belleza Para Ti.
+                        Este es el lugar donde tus manos y pies son mimados con manicuras y podólogas de primera clase,
+                        y tu cuerpo se sumerge en un mundo de serenidad a través de masajes terapéuticos.
+                        Desde el momento en que reservas una cita, te sientes transportado a un entorno de lujo y
+                        tranquilidad.
 
-        <!-- Sección inicio -->
-        <!-- id identificadores unicos, no podes tener 2 llamados iguales -->
-        <section>
-            <div class="main">
-                <!--seccion bienvenida-->
-                <!-- Lista de definición -->
-                <!-- <h2> subtitulo-->
-                <!-- <h2>Inicio</h2> -->
-                <p class="bienvenida1"> <!--agregue la clase del parrafo de bienvenida para centrarlo-->
+                        El equipo de Belleza Para Ti se enorgullece de ofrecer un servicio excepcional que combina
+                        la experiencia de sus profesionales con productos de alta calidad.
+                    </p>
+                </div>
+            </section>
+            <br>
+            <br>
+            <section>
+                <!--seccion manicuria-->
+                <!-- <dl> tiene 2 partes 1.<dt>concepto/un terminó en la lista de defición/titulo 2.<dd>su definición -->
+                <div class="manicuria">
+                    <h2 class="subtitulo">Manicura de Clase Mundial</h2>
+                    <p>
+                        Sus manicuristas son verdaderos artistas. Cada esmalte se aplica con precisión, y
+                        las últimas tendencias en diseños de uñas se hacen realidad aquí. No solo obtendrás unas
+                        uñas hermosas, sino que también experimentarás un cuidado y atención incomparables.
+                    </p>
+                    <!-- <dl>
+                        <dt class="subtitulo">Manicura de Clase Mundial </dt>
+                        <dd>Sus manicuristas son verdaderos artistas. Cada esmalte se aplica con precisión, y
+                            las últimas tendencias en diseños de uñas se hacen realidad aquí. No solo obtendrás unas
+                            uñas
+                            hermosas, sino que también experimentarás un cuidado y atención incomparables.</dd>
+                    </dl> -->
+            </section>
 
-                    Si buscas un refugio de relajación y rejuvenecimiento, no busques más allá de Belleza Para Ti. Este
-                    es
-                    el lugar donde tus manos y pies son mimados con manicuras y podólogas de primera clase, y tu cuerpo
-                    se
-                    sumerge en un mundo de serenidad a través de masajes terapéuticos.
-                    <br>
-                    Desde el momento en que reservas una cita, te sientes transportado a un entorno de lujo y
-                    tranquilidad.
-                    <br>El equipo de Belleza Para Ti se enorgullece de ofrecer un servicio excepcional que combina la
-                    experiencia de sus profesionales con productos de alta calidad.
+            <section>
+                <div class="podologia">
+                    <dt class="subtitulo">Cuidado Podológico Profesional </dt>
+                    <dd>La salud de tus pies es importante, y Belleza Para Ti </dd>
+                </div>
+            </section>
+
+            <section>
+                <div class="masajes">
+                    <dt class="subtitulo">Relajación Profunda con Masajes </dt>
+                    <dd>Los masajes son el regalo definitivo para tu cuerpo y mente. En Belleza Para Ti, los
+                        terapeutas están dedicados a liberar la tensión y el estrés acumulado. Puedes elegir entre una
+                        variedad de masajes, desde relajantes hasta terapéuticos, y cada experiencia es un viaje
+                        rejuvenecedor.
+                    </dd>
+                </div>
+            </section>
+
+            <section>
+                <p class="bienvenida2"> Además de sus servicios excepcionales, Belleza Para Ti se preocupa por la higiene
+                    y la seguridad de sus clientes, brindando un ambiente limpio y esterilizado en todo momento. 
+                    Belleza Para Ti es un refugio para la belleza y el bienestar donde cada detalle se cuida
+                    meticulosamente. Si deseas unas manos y pies impecables, un alivio para tus pies
+                    cansados o una pausa en la rutina para relajarte. Tu experiencia en Belleza Para Ti será
+                    inolvidable, y tu cuerpo y mente te lo agradecerán. ¡No dudes en reservar una cita y descubrir el
+                    encanto de este santuario de belleza y cuidado personal!
                 </p>
-                <!-- <dl> definition list -->
-                <br>
-                <br>
-                <dl>
-                    <section>
-                        <!--seccion manicuria-->
-                        <!-- <dl> tiene 2 partes 1.<dt>concepto/un terminó en la lista de defición/titulo 2.<dd>su definición -->
-                        <div class="manicuria">
-                            <!--<img src="imagenes y videos/manicuria_index.jpg">-->
-                            <dt class="subtitulo">Manicura de Clase Mundial </dt>
-                            <dd>Sus manicuristas son verdaderos artistas. Cada esmalte se aplica con precisión, y las
-                                últimas
-                                tendencias en diseños de uñas se hacen realidad aquí. No solo obtendrás unas uñas
-                                hermosas, sino
-                                que también experimentarás un cuidado y atención incomparables.</dd>
-                        </div>
-                    </section>
+            </section>
 
-                    <section>
-                        <br>
-                        <div class="podologia">
-                            <dt class="subtitulo">Cuidado Podológico Profesional </dt>
-                            <dd>La salud de tus pies es importante, y Belleza Para Ti </dd>
-                        </div>
-                    </section>
 
-                    <br>
-
-                    <section>
-                        <div class="masajes">
-                            <dt class="subtitulo">Relajación Profunda con Masajes </dt>
-                            <dd>Los masajes son el regalo definitivo para tu cuerpo y mente. En Belleza Para Ti, los
-                                terapeutas
-                                están dedicados a liberar la tensión y el estrés acumulado. Puedes elegir entre una
-                                variedad de
-                                masajes, desde relajantes hasta terapéuticos, y cada experiencia es un viaje
-                                rejuvenecedor.
-                            </dd>
-                        </div>
-                    </section>
-
-                    <br>
-                    <section>
-                        <p class="bienvenida2" Además de sus servicios excepcionales, Belleza Para Ti se preocupa por la
-                            higiene y la seguridad de sus clientes, brindando un ambiente limpio y esterilizado en todo
-                            momento. <br>
-                            <br>
-                            Belleza Para Ti es un refugio para la belleza y el bienestar donde cada detalle se cuida
-                            meticulosamente. Si deseas unas manos y pies impecables, un alivio para tus pies cansados o
-                            una
-                            pausa en la rutina para relajarte. Tu experiencia en Belleza Para Ti será inolvidable, y tu
-                            cuerpo y
-                            mente te lo agradecerán. ¡No dudes en reservar una cita y descubrir el encanto de este
-                            santuario de
-                            belleza y cuidado personal!
-                        </p>
-                    </section>
-                </dl>
-
-        </section>
-
+        </main>
 
         <!-- SPAN OSEA LAS IMAGENES - Elementos en linea osea me los pone un al lado del otro -->
-        <section>
-            <h2>SPAN</h2>
+        <aside id="FotosProductosySevicios">
+
+            
             <span>
                 <!-- img, h2, h1 lo que quiero puedo poner -->
-                <img src="./img/cara.jpg" alt="">
+                <img src="./imagenes y videos/manicuria_index.jpg" width="340">
             </span>
 
             <span>
-                <img src="./img/cara.jpg" alt="">
+                <img src="./imagenes y videos/pies.jpg" width="290">
             </span>
+
+            <!-- <span>
+                <img src="./imagenes y videos/manicuria2.jpg" width="320">
+            </span> -->
 
             <span>
-                <img src="./img/cara.jpg" alt="">
+                <img src="./imagenes y videos/masajes6.jpg" width="340">
             </span>
-
-            <span>
-                <img src="./img/cara.jpg" alt="">
-            </span>
-
-
-
 
             <br><br>
 
             <!-- <a href="#">Ir arriba ☝</a> -->
+        </aside>
 
-    </main>
     </div>
 
 
-    <div id="footer">
+    <div class="footer">
         <footer>
-            <!--agregue iconos de fb, ig y whatsapp, falta agregar link a whatsapp. tambien agregue el target blank para que se abra en una nueva ventana de navegador-->
-            <a href=>"<i class="fa-brands fa-square-whatsapp" target="_blank"></i>
-                <a href="https://www.facebook.com/Bellezaparatiberazategui?mibextid=D4KYlr" target="_blank"><i
-                        class="fa-brands fa-square-facebook"></i></a>
-                <a href="https://instagram.com/bellezaparati.berazategui?igshid=NjIwNzIyMDk2Mg==" target="_blank"><i
-                        class="fa-brands fa-square-instagram"></i></a>
 
-                <h4 class="copyright">Derechos de autor &copy; 2023 Belleza para ti</h4>
+
+            <!--agregue iconos de fb, ig y whatsapp, falta agregar link a whatsapp. tambien agregue el target blank para que se abra en una nueva ventana de navegador-->
+            <a href="https://www.facebook.com/Bellezaparatiberazategui?mibextid=D4KYlr" title="Facebook"
+                target="_blank">
+                <i class="fa-brands fa-square-facebook" style="font-size: 36px;"></i>
+            </a>
+
+            <a href="https://instagram.com/bellezaparati.berazategui?igshid=NjIwNzIyMDk2Mg==" title="Instagram"
+                target="_blank">
+                <i class="fa-brands fa-square-instagram" style="font-size: 36px;"></i>
+            </a>
+
+            <h4 class="copyright">Derechos de autor &copy; 2023 Belleza para ti</h4>
         </footer>
     </div>
 
 
+    </div>
 
     <!-- TODO ESTO ES UNA PAGINA WEB -->
     <!-- SITIO WEB ES UN CONJUNTO DE PAGINAS -->

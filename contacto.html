@@ -8,6 +8,8 @@
 
     <!-- CSS externo, lo tengo que linkear, href decirle donde tengo guardada -->
     <link rel="stylesheet" href="./css/estilo.css">
+    <!-- KitCode que me genere el Fontawesome -->
+    <script src="https://kit.fontawesome.com/b1ec3dced8.js" crossorigin="anonymous"></script>
 
     <!-- favicon
     <link rel="icon" href="./img/favicon.ico"> -->
@@ -18,145 +20,150 @@
 
 
 <body>
-    <div id="header"> </div>
-    <!-- Imagen -->
-    <!-- 2 atributos 1.src/source= ruta donde tengo guardada 2. alt= la descripción-->
-    <!--  img, arrastro img y con el shift presionado suelto -->
-    <!-- ./img es el raiz de esa carpeta -->
-    <!-- width/ancho si trabajo con % ajusta anchos siempre al tamaño de la pag-->
-    <!-- <img src="./img/cara.jpg" alt="cara" width="50%"> -->
-    <div class="portada">
-        <span>
-            <div id="logo"><img src="imagenes y videos/logo_belleza_para_ti.jpeg" alt="logo" width="30%"></div>
-        </span>
+    <div class="contenedor">
+        <!-- HEADER Se coloca en el body y es la cabecera visual de la página o de una sección (logotipo, título, etc.). No confundir con <head>, que es el encabezado del documento HTML. // header y adentro del header tenemos el nav que es el menu  -->
+        <header class="encabezado">
+            <!-- Imagen -->
+            <!-- 2 atributos 1.src/source= ruta donde tengo guardada 2. alt= la descripción-->
+            <!--  img, arrastro img y con el shift presionado suelto -->
+            <!-- ./img es el raiz de esa carpeta -->
+            <!-- width/ancho si trabajo con % ajusta anchos siempre al tamaño de la pag-->
 
-        <span>
-            <div id="banner"><img src="imagenes y videos/banner_belleza_para_ti.jpeg" alt="banner" width="70%">
-            </div>
-        </span>
+            <!-- <img src="imagenes y videos/logo_belleza_para_ti.jpeg" alt="logo" width="25px" height="25px"> -->
+            <!-- <img src="imagenes y videos/banner_belleza_para_ti.jpeg" alt="banner"=> -->
 
+            <!-- <nav> -->
+            <img src="imagenes y videos/logo_belleza_para_ti.jpeg" alt="logo">
+            <ul>
+                <li><a href="index.html">Inicio </a></li>
+                <li><a href="productosyservicios.html">Productos y Servicios </a></li>
+                <li><a href="contacto.html">Contacto </a></li>
+                <li><a href="pagina4.html">pagina4 </a>
+                    </nav>
+                </li>
+            </ul>
+            <!-- </nav> -->
 
-        <div id="nav">
-            <!-- target = "_blank" que te abra en un nueva pestaña -->
-            <a href="index.html">Inicio </a>
-            <br><br>
-            <!-- # indica que es un ID -->
-            <!-- <a href="#Historia">Historia |</a> -->
-            <a href="productosyservicios.html">Productos y Servicios </a>
-            <br><br>
-            <a href="contacto.html">Contacto </a>
-            <br><br>
-            <a href="pagina4.html">pagina4 </a>
-        </div>
-</header>
-</div>
+        </header>
 
 
-    <main>
-        <section>
-            <!--<h1>Belleza Para Ti</h1> Lo saco porque creo que es redundante, lo tenemos en el logo del header -->
-            <h2>Agendar tu turno </h2>
-            <!-- Etiqueta para Formulario FORM -->
-            <div id="formulario">
-                <form action="">
-                    <!-- fieldset = recuadro -->
-                    <fieldset>
-                        <legend>Datos Personales</legend>
+        <main>
+            <section>
+                <!--<h1>Belleza Para Ti</h1> Lo saco porque creo que es redundante, lo tenemos en el logo del header -->
+                <h2>Agendar tu turno </h2>
+                <!-- Etiqueta para Formulario FORM -->
+                <div id="formulario">
+                    <form action="">
+                        <!-- fieldset = recuadro -->
+                        <fieldset>
+                            <legend>Datos Personales</legend>
 
-                        <!-- Nombre -->
-                        <!-- Etiqueta Label "que indica al usuario que tiene que poner" + Input "tipo de dato"-->
-                        <label for="nombre">Nombre: </label>
-                        <!-- placeholder es una ayuda para el usuario -->
-                        <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+                            <!-- Nombre -->
+                            <!-- Etiqueta Label "que indica al usuario que tiene que poner" + Input "tipo de dato"-->
+                            <label for="nombre">Nombre: </label>
+                            <!-- placeholder es una ayuda para el usuario -->
+                            <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
 
-                        <br>
-                        <!-- Apellido -->
-                        <label for="Apellido">Apellido: </label>
-                        <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido"> <!--size="10"
+                            <br>
+                            <!-- Apellido -->
+                            <label for="Apellido">Apellido: </label>
+                            <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido"> <!--size="10"
                             maxlength="5" required> -->
 
-                        <br>
-                        <!-- Mail -->
-                        <label for="mail">Mail: </label> <!--agregue ids para base de datos y tamaño-->
-                        <input type="email" name="mail" id="mail" size="30">
+                            <br>
+                            <!-- Mail -->
+                            <label for="mail">Mail: </label> <!--agregue ids para base de datos y tamaño-->
+                            <input type="email" name="mail" id="mail" size="30">
 
 
-                        <br>
-                        <!-- Celular -->
-                        <label for="celular">Celular: </label> <!--agregar ids para base de datos-->
-                        <input type="number" name="celular" id="celular">
-                    </fieldset>
+                            <br>
+                            <!-- Celular -->
+                            <label for="celular">Celular: </label> <!--agregar ids para base de datos-->
+                            <input type="number" name="celular" id="celular">
+                        </fieldset>
 
-                    <br><br>
-                    <fieldset>
-                        <legend>Datos del turno</legend>
+                        <br><br>
+                        <fieldset>
+                            <legend>Datos del turno</legend>
 
-                        <!-- Turno - Selección -->
-                        <label for="fecha">Dia del turno: </label>
-                        <input type="date" min="2023-01-01" max="2023-12-31">
+                            <!-- Turno - Selección -->
+                            <label for="fecha">Dia del turno: </label>
+                            <input type="date" min="2023-01-01" max="2023-12-31">
 
-                        <br>
+                            <!-- Turno - Selección -->
+                            <label for="fecha">Horario del turno: </label>
+                            <input type="time" min="08:00" max="18:00">
 
 
-                        <!-- Interés - Radio (única selección)-->
-                        <label for="interés">Tengo interés en... </label>
-                        <input type="radio" name="interes" id="A">Manicuría
-                        <input type="radio" name="interes" id="B">Podología
-                        <input type="radio" name="interes" id="C">Masajes
+                            <br>
+
+
+                            <!-- Interés - Radio (única selección)-->
+                            <label for="interés">Tengo interés en... </label>
+                            <input type="radio" name="interes" id="A">Manicuría
+                            <input type="radio" name="interes" id="B">Podología
+                            <input type="radio" name="interes" id="C">Masajes
+
+                            <br><br>
+
+                        </fieldset>
+
+                        <br><br>
+                        <!-- Comentarios -->
+                        <label for="comentarios">Comentarios: </label>
+                        <!--como podemos subir el texto para que quede al principio de la caja y no al final?-->
+                        <!-- cols ancho , rows alto  -->
+                        <textarea name="comentarios" id="comentarios" cols="50" rows="10"></textarea>
 
                         <br><br>
 
-                    </fieldset>
+                        <!-- Botones -->
+                        <input type="submit" value="Enviar Formulario">
+                        <input type="reset" value="Borrar">
 
-                    <br><br>
-                    <!-- Comentarios -->
-                    <label for="comentarios">Comentarios: </label>
-                    <!--como podemos subir el texto para que quede al principio de la caja y no al final?-->
-                    <!-- cols ancho , rows alto  -->
-                    <textarea name="comentarios" id="comentarios" cols="50" rows="10"></textarea>
-
-                    <br><br>
-
-                    <!-- Botones -->
-                    <input type="submit" value="Enviar Formulario">
-                    <input type="reset" value="Borrar">
-
-                </form>
-            </div>
-        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
 
 
 
+    <div class="footer">
+        <footer>
 
-
-
-
-
-        </section>
-
-        <br>
-        <section>
+            <!-- <h2> Horario de atención: </h2>
+            <ul>
+                <li>Lunes: 10:00 - 20:00</li>
+                <li>Martes: 10:00 - 20:00</li>
+                <li>Miércoles: 10:00 - 20:00</li>
+                <li>Jueves: 10:00 - 20:00</li>
+                <li>Viernes: 10:00 - 20:00</li>
+                <li>Sábado: 08:00 - 16:00</li>
+                <li>Domingo: Cerrado</li>
+            </ul> -->
             <!-- MAPA -->
-            <div class="mapa"<h2>Dirección</h2>
+            <h2> Dirección :</h2>
+            <h3></h3>
             <!-- Maps ubicacion obelisco + Compartir + Insertar un mapa  -->
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0167125041007!2d-58.3815704!3d-34.603738899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1692220668636!5m2!1ses-419!2sar"
-                width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3277.8545197966423!2d-58.23824752504175!3d-34.759257365727834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32edf4d6a9087%3A0xc0c07e206feed1e6!2sC.%202%203158%2C%20Berazategui%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1696472446250!5m2!1ses-419!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-    </main>
+            <br><br>
+            <!--agregue iconos de fb, ig y whatsapp, falta agregar link a whatsapp. tambien agregue el target blank para que se abra en una nueva ventana de navegador-->
+            <a href="https://www.facebook.com/Bellezaparatiberazategui?mibextid=D4KYlr" title="Facebook"
+                target="_blank">
+                <i class="fa-brands fa-square-facebook" style="font-size: 36px;"></i>
+            </a>
 
-
-    <div id="footer"><footer>
-        <!--agregue iconos de fb, ig y whatsapp, falta agregar link a whatsapp. tambien agregue el target blank para que se abra en una nueva ventana de navegador-->
-        <a href=>"<i class="fa-brands fa-square-whatsapp" target="_blank"></i>
-            <a href="https://www.facebook.com/Bellezaparatiberazategui?mibextid=D4KYlr" target="_blank"><i
-                    class="fa-brands fa-square-facebook"></i></a>
-            <a href="https://instagram.com/bellezaparati.berazategui?igshid=NjIwNzIyMDk2Mg==" target="_blank"><i
-                    class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://instagram.com/bellezaparati.berazategui?igshid=NjIwNzIyMDk2Mg==" title="Intagram"
+                target="_blank">
+                <i class="fa-brands fa-square-instagram" style="font-size: 36px;"></i>
+            </a>
 
             <h4 class="copyright">Derechos de autor &copy; 2023 Belleza para ti</h4>
-    </footer>
+        </footer>
     </div>
 
 
