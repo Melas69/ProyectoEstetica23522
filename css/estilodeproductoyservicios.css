@@ -28,32 +28,31 @@ p {
     /* text-align: center; */
 }
 
+header {
+    
+    width: auto;
+    height: auto;    
+    background-color: white;
+    display: flex;
+}
+
 header img{
-    width: 100px; /* Ajusta el ancho del logo */
-    height: auto; /* Este me permite que la altura se ajuste automáticamente */
+    
+    display: flex;
+    width: auto; /* Ajusta el ancho del logo */
+    height: 80px ; /* Este me permite que la altura se ajuste automáticamente */
     display: block; /* Lo use para eliminar cualquier espacio en blanco debajo del logo */
-    margin: 0 auto; /* Lo use para centrar el logo horizontalmente */
+    margin: 5px; /* Lo use para centrar el logo horizontalmente */
+    padding: 5px;
 }
+
 header ul{
-    list-style-type: none;
-    list-style-position: inherit;
-    margin: auto;
-    padding: 0; /* Lo que hago es eliminar el relleno interior para evitar espacios adicionales */
-    display: flex; /* Utilizo flexbox para alinear los elementos del menú */
-    justify-content:space-around; /*Me distribuye los elementos de equitativa */
-    align-items: center; /* Centra verticalmente los elementos */
-    font-size: 14 px; /*Ajusta el tamaño de la fuente*/
-
-}
-
-header ul li{
-    margin: 0px; /*Ajusta el espacio entre los elementos del menu */
-    font-family: 'Cuprum', sans-serif;
-}
-
-/* Lo puse para agregar un margen a los elementos del menú para poder separarlos */
-header ul li:not(:last-child) {
-    margin-right: 0px; /* Me ajusta el espacio entre los elementos del menú */
+    list-style-type: none ;
+    margin: 0px;
+    padding: 5%;
+    display: flex;
+    text-align: center;
+    /* place-content: space-between; */
 }
 
 a{
@@ -62,6 +61,13 @@ a{
     font-family: 'Cuprum', sans-serif;
 }
 a:hover{font-weight: bold;}
+
+header .encabezado{
+    margin: 5px;
+    padding: 5px;
+    background: white;
+    font: 16px  'Cuprum', sans-serif;
+}
 
 /* Oculta el menú */
 .menu {
