@@ -22,29 +22,29 @@
 <body>
     <div class="contenedor">
         <!-- HEADER Se coloca en el body y es la cabecera visual de la página o de una sección (logotipo, título, etc.). No confundir con <head>, que es el encabezado del documento HTML. // header y adentro del header tenemos el nav que es el menu  -->
-        <header class="encabezado">
-            <!-- Imagen -->
-            <!-- 2 atributos 1.src/source= ruta donde tengo guardada 2. alt= la descripción-->
-            <!--  img, arrastro img y con el shift presionado suelto -->
-            <!-- ./img es el raiz de esa carpeta -->
-            <!-- width/ancho si trabajo con % ajusta anchos siempre al tamaño de la pag-->
-
-            <!-- <img src="imagenes y videos/logo_belleza_para_ti.jpeg" alt="logo" width="25px" height="25px"> -->
-            <!-- <img src="imagenes y videos/banner_belleza_para_ti.jpeg" alt="banner"=> -->
-
-            <!-- <nav> -->
-            <img src="imagenes y videos/logo_belleza_para_ti.jpeg" alt="logo">
-            <ul>
-                <li><a href="index.html">Inicio </a></li>
-                <li><a href="productosyservicios.html">Productos y Servicios </a></li>
-                <li><a href="contacto.html">Contacto </a></li>
-                <li><a href="GiftsCards.html">Gift Card </a>
-                    </nav>
-                </li>
-            </ul>
-            <!-- </nav> -->
-
-        </header>
+            <header class="encabezado">
+                <!-- Imagen -->
+                <!-- 2 atributos 1.src/source= ruta donde tengo guardada 2. alt= la descripción-->
+                <!--  img, arrastro img y con el shift presionado suelto -->
+                <!-- ./img es el raiz de esa carpeta -->
+                <!-- width/ancho si trabajo con % ajusta anchos siempre al tamaño de la pag-->
+    
+                <!-- <img src="imagenes y videos/logo_belleza_para_ti.jpeg" alt="logo" width="25px" height="25px"> -->
+                <!-- <img src="imagenes y videos/banner_belleza_para_ti.jpeg" alt="banner"=> -->
+                <div class="logo">
+                    <img src="imagenes y videos/logo_belleza_para_ti.jpeg" alt="logo">
+                </div>
+                
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio </a></li>
+                        <li><a href="productosyservicios.html">Productos y Servicios </a></li>
+                        <li><a href="contacto.html">Contacto </a></li>
+                        <li><a href="GiftsCards.html">Gift Card </a></li>
+                    </ul>
+                </nav>
+    
+                </header>
 
 
         <main>
@@ -110,11 +110,12 @@
 
                         <br><br>
                         <!-- Comentarios -->
-                        <label for="comentarios">Comentarios: </label>
-                        <!--como podemos subir el texto para que quede al principio de la caja y no al final?-->
-                        <!-- cols ancho , rows alto  -->
-                        <textarea name="comentarios" id="comentarios" cols="50" rows="10"></textarea>
-
+                        <div class="areaComentario">
+                            <label for="comentarios">Comentarios: </label>
+                            <!--como podemos subir el texto para que quede al principio de la caja y no al final?-->
+                            <!-- cols ancho , rows alto  -->
+                            <textarea name="comentarios" id="comentarios" cols="50" rows="10"></textarea>
+                        </div>
                         <br><br>
 
                         <!-- Botones -->
@@ -165,10 +166,6 @@
             <h4 class="copyright">Derechos de autor &copy; 2023 Belleza para ti</h4>
         </footer>
     </div>
-
-
-
-
 
 </body>
 
