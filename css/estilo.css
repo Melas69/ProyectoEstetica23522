@@ -351,13 +351,14 @@ a:hover{font-weight: bold;}
 
 .promo-cuerpo{
     position: absolute;
-    bottom: 0;
+    bottom: 3px;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.5);
+    width: 580px;
     color: white;
 }
 
-.promo-cuerpo h5, .promo-cuerpo p{
+.promo-cuerpo h5{
     margin: 0;
 }
 
@@ -376,6 +377,7 @@ a:hover{font-weight: bold;}
 .titulos h3{
     margin-top: 8px;
     margin-left: 350px;
+    
     color: rgb(0, 0, 0);
 }
 
