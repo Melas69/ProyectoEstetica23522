@@ -169,7 +169,232 @@ nav a:hover{
 }
  
  /* -----------------------------PRODUCTOSYSERVICIOS.HTML-------------------------- */
- 
+ *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: pink;
+    color: #000;
+    font-family:'Cuprum', sans-serif ;
+}
+
+h2 {
+    font-family: 'Cuprum', sans-serif;
+    /* margin-left: 0px; */
+    color: black;
+    font-weight: bold;
+    /* text-align: center; */
+}
+
+h4{
+    color: #000;
+    font-family:'Cuprum', sans-serif;
+    /* text-align: center; */
+}
+
+p {
+    color: #000;
+    font-family:'Cuprum', sans-serif;
+    /* text-align: center; */
+}
+
+header {
+    
+    width: auto;
+    height: auto;    
+    background-color: white;
+    display: flex;
+}
+
+header img{
+    
+    display: flex;
+    width: auto; /* Ajusta el ancho del logo */
+    height: 80px ; /* Este me permite que la altura se ajuste automáticamente */
+    display: block; /* Lo use para eliminar cualquier espacio en blanco debajo del logo */
+    margin: 5px; /* Lo use para centrar el logo horizontalmente */
+    padding: 5px;
+}
+
+header ul{
+    list-style-type: none ;
+    margin: 0px;
+    padding: 5%;
+    display: flex;
+    text-align: center;
+    /* place-content: space-between; */
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Cuprum', sans-serif;
+}
+a:hover{font-weight: bold;}
+
+header .encabezado{
+    margin: 5px;
+    padding: 5px;
+    background: white;
+    font: 16px  'Cuprum', sans-serif;
+}
+/* Oculta el menú */
+.menu {
+    display: none;
+    flex-direction: column; /* Esto lo que hace es cambiar la dirección para poner uno debajo de los otros los elementos */
+    align-items: center; /* Alinea horizontalmente en el centro */
+    background: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 1; /* Asegura que el menú esté en la parte superior */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Agrega sombra */
+    font-family: 'Cuprum', sans-serif;
+}
+
+/* Estilos para los elementos del menú */
+.menu ul {
+    display: none;
+}
+
+.menu li {
+    margin: 10px 0; /* Espacio vertical entre elementos */
+}
+
+.contenedor{
+    font-family: 'Cuprum', sans-serif;
+    width: 90%;
+    max-width: 1000px; /*ancho máximo de la página*/
+    margin: 20px auto; /*auto permite centrar nuestra página en forma horizontal*/
+    display: grid;
+    gap: 20px; /*nos ahorramos tenes que poner márgenes entre los elementos*/
+    /*3 columnas: contenido (con 2 widgets) + sidebar*/
+    grid-template-columns: repeat(3,1fr);
+    /*4 filas: header, contenido, widgets, footer*/
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:"encabezado encabezado encabezado"
+                        "contenido contenido sidebar"
+                        "widget-1 widget-2 sidebar"
+                        "pie pie pie";
+}
+
+.contenedor > div,
+.contenedor .encabezado,
+.contenedor .contenido,
+.contenedor .sidebar,
+.contenedor .pie {
+    padding: 20px;
+    border-radius: 4px;
+    font-family: 'Cuprum', sans-serif;
+}
+
+.contenedor .encabezado{
+    background:white;
+    color: black;
+    grid-area: encabezado;
+    list-style: inside;
+}
+
+.contenedor .contenido{
+    background: papayawhip;
+    grid-area: contenido; 
+}
+
+.contenedor .sidebar{
+    background: papayawhip;
+    /*utilizamos flexbox para alinear el contenido*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: sidebar; 
+}
+
+/* Estilos para el sidebar */
+.sidebar {
+    background: #f2f2f2;
+    padding: 20px;
+    font-family: 'Cuprum', sans-serif;
+}
+
+  /* Estilos para los enlaces de noticias */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    font-family: 'Cuprum', sans-serif;
+}
+
+/* Estilos para cada elemento de la lista (noticia) */
+.sidebar ul li {
+    margin: 10px 0;
+    display: block; /* Hace que cada elemento de lista sea un bloque */
+    font-family: 'Cuprum', sans-serif;
+}
+
+.sidebar ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    font-weight: bold;
+}
+
+.contenedor .widget-1,
+.contenedor .widget-2{
+    background: papayawhip;
+    color: #000;
+    display: flex; /*se utiliza flexbox para alinear el contenido*/
+    flex-direction: column; /* Esto cambia la dirección para apilar los elementos */
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .widget-1{
+    grid-area: widget-1;
+}
+
+.contenedor .widget-2{
+    grid-area: widget-2; 
+}
+
+/* Añado estilos para las imágenes en los widgets si es necesario */
+.contenedor .widget-1 img,
+.contenedor .widget-2 img {
+  max-width: 100%; /* Esto me ajusta el ancho máximo para las imágenes */
+  height: auto; /* Esto me ajusta la altura automáticamente para mantener la proporción */
+}
+
+.contenedor .pie{
+    background: papayawhip;
+    /* font-family:'Cormorant Garamond', serif; */
+    color: black;
+    grid-area: pie; 
+}
+
+@media screen and (max-width: 768px){
+    .contenedor{
+        grid-template-areas:"encabezado encabezado encabezado"
+                            "contenido contenido contenido"
+                            "sidebar sidebar sidebar"
+                            "widget-1 widget-1 widget-2"
+                            "pie pie pie";
+    }
+}
+
+@media screen and (max-width: 450px){
+    .contenedor{
+        grid-template-areas:"encabezado encabezado encabezado"
+                            "contenido contenido contenido"
+                            "widget-1 widget-1 widget-1"
+                            "widget-2 widget-2 widget-2"
+                            "sidebar sidebar sidebar"
+                            "pie pie pie";
+    }
+}
+
 
 
 /************************************************ Gift Card ***********************************************************/
