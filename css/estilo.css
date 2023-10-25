@@ -25,7 +25,7 @@ header {
     height: auto;    
     background-color: white;
     display: flex;
-     /* place-content: space-between; */
+    place-content: space-between;
 }
 
 header img{
@@ -106,23 +106,53 @@ nav a:hover{
     background-color: papayawhip;
     display: flex;
     overflow-y: hidden;
-    width: 590px;
-    height: 590px;
+    width: 480px;
+    height: 700px;
     padding: 16px;
     margin-top: 2%;
-    margin-left: 30%;
+    margin-left: 45%;
     font-family: 'Cuprum', sans-serif;
 }
+/*validacion*/
+.form-input{
+    margin-bottom: 5px;
+}
+
+.form-input label{
+    display: block;
+}
+
+.form-input input{
+
+    width: 50%; /*ancho nuevo del box*/
+    border: none;/* boder de todo el box */
+    background: none;/*Fondo del box donde se carga el dato*/
+    border-bottom: 1px solid rgb(89, 93, 49);/*Esto agrega solo la linea de abajo del box donde se carga el dato*/
+}
+
+.form-input input:hover + label{
+    font-weight: bold;
+
+}
+
+.erroringreso{
+    color: red;
+    margin-top: 0px;
+    font-size: 10px;
+    font-weight: bold;
+    
+
+}
+
+/***************************** fin de la validacion*/
 
 .areaComentario{
     padding: 10px;
-
 }
 .areaComentario label{
+    display:flex;
     color: black;
     font-family: 'Cuprum', sans-serif;
-
-
 }
 
  /* -----------------------------PRODUCTOSYSERVICIOS.HTML-------------------------- */

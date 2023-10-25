@@ -54,33 +54,44 @@
                 <h2>Agendar tu turno </h2>
                 <!-- Etiqueta para Formulario FORM -->
                 <div id="formulario">
-                    <form action="">
+                    <form action=""  class="form">
                         <!-- fieldset = recuadro -->
                         <fieldset>
                             <legend>Datos Personales</legend>
 
                             <!-- Nombre -->
                             <!-- Etiqueta Label "que indica al usuario que tiene que poner" + Input "tipo de dato"-->
-                            <label for="nombre">Nombre: </label>
-                            <!-- placeholder es una ayuda para el usuario -->
-                            <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
-
+                            <div class="form-input nombre">
+                               
+                                <!-- placeholder es una ayuda para el usuario -->
+                                <input type="text" name="" id="nombre" placeholder="Ingrese su nombre">
+                                <label for="nombre">Nombre </label>
+                            </div>
                             <br>
                             <!-- Apellido -->
-                            <label for="Apellido">Apellido: </label>
-                            <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido"> <!--size="10"
+                            <div class="form-input apellido">
+                                
+                                <input type="text" name="" id="apellido" placeholder="Ingrese su apellido"> <!--size="10"
                             maxlength="5" required> -->
-
+                                <label for="Apellido">Apellido </label>
+                                <p class="Erroringreso"></p>
+                            </div>
                             <br>
+                            
                             <!-- Mail -->
-                            <label for="mail">Mail: </label> <!--agregue ids para base de datos y tamaño-->
-                            <input type="email" name="mail" id="mail" size="30">
-
+                            <div class="form-input mail">
+                                
+                                <input type="email" name="" id="email" size="30" placeholder="Ingrese su email">
+                                <label for="mail">Mail </label> <!--agregue ids para base de datos y tamaño-->
+                            </div>
 
                             <br>
                             <!-- Celular -->
-                            <label for="celular">Celular: </label> <!--agregar ids para base de datos-->
-                            <input type="number" name="celular" id="celular">
+                            <div class="form-input celular">
+                                
+                                <input type="tel" name="celular" id="celular" placeholder="Ingese su celular sin 15">
+                                <label for="celular">Celular </label> <!--agregar ids para base de datos-->
+                            </div>
                         </fieldset>
 
                         <br><br>
@@ -120,17 +131,20 @@
                         <br><br>
 
                         <!-- Botones -->
-                        <input type="submit" value="Enviar Formulario">
-                        <input type="reset" value="Borrar">
-
+                        <div class="boton">
+                            <input type="submit" value="Enviar Formulario">
+                            <input type="reset" value="Borrar">
+                        </div>
                     </form>
                 </div>
             </section>
+           
+
         </main>
     </div>
 
 
-
+   
     <div class="footer">
         <footer>
 
@@ -167,7 +181,7 @@
             <h4 class="copyright">Derechos de autor &copy; 2023 Belleza para ti</h4>
         </footer>
     </div>
-
+    <script src="js/formulario.js"></script>
 </body>
 
 </html>
